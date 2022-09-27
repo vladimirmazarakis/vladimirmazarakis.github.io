@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+
+#calculate-btn{
+    width: 100%;
+}
+
+.hero-block{
+    background-image: linear-gradient(to top, #86377b 20%, #27273c 80%);
+    height: 499px;
+    text-align: center;
+}
+
+.hero-block__main-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wave-wrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    pointer-events: none;
+}
+.wave-wrapper-inner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 500px;
+    top: -1px;
+    
+}
+.hero-block__wave-wrapper--wave-animation__wave-wrapper-inner--bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+.hero-block__wave-wrapper--wave-animation__wave-wrapper-inner--bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+.hero-block__wave-wrapper--wave-animation__wave-wrapper-inner--bgBottom {
+    z-index: 5;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.hero-block__wave-wrapper--wave-animation__wave-wrapper-inner--bgBottom__wave--top                                                                                                                                                                                    {
+    background-size: 50% 100px;
+}                                                                       
+.hero-block__wave-wrapper--wave-animation .hero-block__wave-wrapper--wave-animation__wave-wrapper-inner--bgBottom__wave--top {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.hero-block__wave-wrapper--wave-animation__wave-wrapper-inner--bgBottom__wave--middle {
+    background-size: 50% 120px;
+}
+.wave-animation .hero-block__wave-wrapper--wave-animation__wave-wrapper-inner--bgBottom__wave--middle {
+    animation: move_wave 10s linear infinite;
+}
+.hero-block__wave-wrapper--wave-animation__wave-wrapper-inner--bgBottom__wave--bottom {
+    background-size: 50% 100px;
+}
+.wave-animation .hero-block__wave-wrapper--wave-animation__wave-wrapper-inner--bgBottom__wave--bottom {
+    animation: move_wave 15s linear infinite;
+}
+
+.fibonacci-block{
+    height: 100vh;
+}
+
+.fibonacci-block__blocks{
+    padding: 20px 0;
+}
+
+.fibonacci-block__blocks__row{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.fibonacci-block__blocks__row__block{
+    height: 125px;
+    width: 125px;
+    border: 1px black solid;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: block-appear-animation 2s;
+    transition: transform .2s;
+}
+
+.fibonacci-block__blocks__row__block:hover{
+    transform: scale(1.1);
+}
+
+@keyframes block-appear-animation{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

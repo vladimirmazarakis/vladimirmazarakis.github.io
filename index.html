@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci - Μαθηματικά</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <main>
+        <div class="hero-block">
+            <div class="hero-block__main-content">
+                <div class="hero-block__main-content__hero-text">
+                    <h1>Fibonacci - Μαθηματικά</h1>
+                </div>
+                <div class="hero-block__main-content__hero-text__hero-sub-text">
+                    Κατασκευασμένο απο τον Βλαδίμηρο Μαζαράκη
+                </div>
+            </div>
+            <div class="wave-wrapper wave-animation hero-block__wave-wrapper--wave-animation">
+                <div class="wave-wrapper-inner wave-wrapper-inner hero-block__wave-wrapper--wave-animation__wave-wrapper-inner--bgTop">
+                    <div class="wave hero-block__wave-wrapper--wave-animation__wave-wrapper-inner--bgBottom__wave--top" style="background-image: url('assets/wave-top.png')"></div>
+                </div>
+                <div class="wave-wrapper-inner wave-wrapper-inner ero-block__wave-wrapper--wave-animation__wave-wrapper-inner--bgMiddle">
+                    <div class="wave hero-block__wave-wrapper--wave-animation__wave-wrapper-inner--bgBottom__wave--middle" style="background-image: url('assets/wave-mid.png')"></div>
+                </div>
+                <div class="wave-wrapper-inner wave-wrapper-inner ero-block__wave-wrapper--wave-animation__ave-wrapper-inner--bgBottom">
+                    <div class="wave hero-block__wave-wrapper--wave-animation__wave-wrapper-inner--bgBottom__wave--bottom" style="background-image: url('assets/wave-bot.png')"></div>
+                </div>
+            </div>
+        </div>
+        <div class="fibonacci-block">
+            <div class="container fibonacci-block__inputs-container">
+                <div class="fibonacci-block__inputs-container__inputs">
+                    <form class="row fibonacci-block__inputs-container__inputs__form">
+                        <div class="input-group col">
+                            <input class="form-control" id="number-one" type="number" placeholder="Αριθμός 1" id="">
+                        </div>
+                        <div class="input-group col">
+                            <input class="form-control" id="number-two" type="number" placeholder="Αριθμός 2" id="">
+                        </div>
+                        <div class="input-group col">
+                            <input class="form-control" id="count" type="number" placeholder="Αριθμός Fibonacci" id="">
+                        </div>
+                        <div class="input-group col">
+                            <button type="submit" id="calculate-btn" class="btn btn-success">Υπολογισμός</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="container fibonacci-block__blocks">
+                <div class="fibonacci-block__blocks__row">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
