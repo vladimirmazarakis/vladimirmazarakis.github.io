@@ -71,6 +71,7 @@
     background-repeat: repeat no-repeat;
     background-position: 0 bottom;
     transform-origin: center bottom;
+    background-size: cover;
 }
 .hero-block__wave-wrapper--wave-animation__wave-wrapper-inner--bgBottom__wave--top                                                                                                                                                                                    {
     background-size: 50% 100px;
@@ -108,7 +109,7 @@
     gap: 20px;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: center;
 }
 
 .fibonacci-block__blocks__row__block{
